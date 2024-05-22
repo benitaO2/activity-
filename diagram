@@ -1,0 +1,15 @@
+graph TD
+    A[Start] --> B[User Inputs Brand Name]
+    B --> C[Fetch Tweets]
+    C --> D[Perform Sentiment Analysis]
+    D --> E[Classify Sentiment]
+    E --> F{Sentiment Type}
+    F --> G[Positive]
+    F --> H[Neutral]
+    F --> I[Negative]
+    G --> J[Store Results]
+    H --> J[Store Results]
+    I --> J[Store Results]
+    J --> K[Generate Graphical Representation]
+    K --> L[Display Results]
+    L --> M[End]
